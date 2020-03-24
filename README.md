@@ -5,4 +5,4 @@ Please find the slides under /slides
 
 Lecture slides: HY##-****.pdf
 
-Lab slides: HYLAB##.pdf
+Lab slides: HYLAB##-****.pdf
