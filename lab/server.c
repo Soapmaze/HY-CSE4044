@@ -16,7 +16,7 @@ void myprintf(char *msg)
 	uintptr_t framep;
 	asm("movl %%ebp, %0" : "=r"(framep));
 	printf("The ebp value inside myprintf() is: 0x%.8x\n", framep);
-
+	printf("The address of the 'msg' argument: 0x%.8x\n", (unsigned)&msg);
 	printf(msg);
 	printf("The value of the 'target' variable (after): 0x%.8x\n", target);
 }
