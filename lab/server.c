@@ -16,7 +16,9 @@ void myprintf(char *msg)
 	uintptr_t framep;
 	asm("movl %%ebp, %0" : "=r"(framep));
 	printf("The ebp value inside myprintf() is: 0x%.8x\n", framep);
-
+	
+	
+	//This line has a format string vulnerability
 	printf(msg);
 	printf("The value of the 'target' variable (after): 0x%.8x\n", target);
 }
